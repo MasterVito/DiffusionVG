@@ -23,7 +23,7 @@ The full paper can be found at: [https://arxiv.org/abs/2310.xxxxx](https://arxiv
 
 ## Pipeline
 
-![model](.\images\model.png)
+![model](https://github.com/MasterVito/DiffusionVG/blob/main/images/model.png)
 
 
 
