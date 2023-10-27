@@ -17,7 +17,7 @@ Video grounding aims to localize the target moment in an untrimmed video corresp
 
 
 
-The full paper can be found at: [https://arxiv.org/abs/2310.xxxxx](https://arxiv.org/abs/2310.xxxxx)
+The full paper can be found at: [https://arxiv.org/abs/2310.17189](https://arxiv.org/abs/2310.17189)
 
 
 
@@ -32,12 +32,12 @@ The full paper can be found at: [https://arxiv.org/abs/2310.xxxxx](https://arxiv
 If you find our work helpful to your research, please consider citing our paper using the following format: 
 
 ```bibtex
-@misc{liang2023diffusionvg,
+@misc{liang2023exploring,
       title={Exploring Iterative Refinement with Diffusion Models for Video Grounding}, 
       author={Xiao Liang and Tao Shi and Yaoyuan Liang and Te Tao and Shao-Lun Huang},
       year={2023},
-      eprint={2310.xxxxx},
+      eprint={2310.17189},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.CV}
 }
 ```
