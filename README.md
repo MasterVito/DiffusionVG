@@ -68,12 +68,12 @@ bash scripts/run_train.sh
 If you find our work helpful to your research, please consider citing our paper using the following format: 
 
 ```bibtex
-@misc{liang2023exploring,
-      title={Exploring Iterative Refinement with Diffusion Models for Video Grounding}, 
-      author={Xiao Liang and Tao Shi and Yaoyuan Liang and Te Tao and Shao-Lun Huang},
-      year={2023},
-      eprint={2310.17189},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{liang2024exploring,
+  title={Exploring iterative refinement with diffusion models for video grounding},
+  author={Liang, Xiao and Shi, Tao and Liang, Yaoyuan and Tao, Te and Huang, Shao-Luo},
+  booktitle={2024 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages={1--6},
+  year={2024},
+  organization={IEEE}
 }
 ```
