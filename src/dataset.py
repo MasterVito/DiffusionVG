@@ -1,13 +1,7 @@
 """ Dataset loader for the Charades-STA dataset """
 import os
-import csv
-import json
-import h5py
 import numpy as np
 import torch
-from torch import nn
-from pdb import set_trace
-import torch.nn.functional as F
 import torch.utils.data as data
 from datasets import load_dataset
 from utils.tensor_utils import pad_sequences_1d

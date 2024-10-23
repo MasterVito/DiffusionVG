@@ -2,16 +2,12 @@ import math
 import copy
 import random
 import numpy as np
-from time import time
-from pdb import set_trace
-from typing import Optional
 from collections import namedtuple
-from easydict import EasyDict as edict
 from transformers import DistilBertTokenizer, DistilBertModel
 
 import torch
 import torch.nn.functional as F
-from torch import nn, Tensor
+from torch import nn
 
 from src.span_utils import generalized_temporal_iou, span_cxw_to_xx, span_xx_to_cxw
 from src.position_encoding import build_position_encoding
