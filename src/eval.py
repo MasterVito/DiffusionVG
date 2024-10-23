@@ -301,33 +301,6 @@ def eval_highlight(submission, ground_truth, verbose=True):
 
 
 def eval_submission(submission, ground_truth, verbose=True, match_number=True):
-    """
-    Args:
-        submission: list(dict), each dict is {
-            qid: str,
-            query: str,
-            vid: str,
-            pred_relevant_windows: list([st, ed]),
-            pred_saliency_scores: list(float), len == #clips in video.
-                i.e., each clip in the video will have a saliency score.
-        }
-        ground_truth: list(dict), each dict is     {
-          "qid": 7803,
-          "query": "Man in gray top walks from outside to inside.",
-          "duration": 150,
-          "vid": "RoripwjYFp8_360.0_510.0",
-          "relevant_clip_ids": [13, 14, 15, 16, 17]
-          "saliency_scores": [[4, 4, 2], [3, 4, 2], [2, 2, 3], [2, 2, 2], [0, 1, 3]]
-               each sublist corresponds to one clip in relevant_clip_ids.
-               The 3 elements in the sublist are scores from 3 different workers. The
-               scores are in [0, 1, 2, 3, 4], meaning [Very Bad, ..., Good, Very Good]
-        }
-        verbose:
-        match_number:
-
-    Returns:
-
-    """
     pred_qids = set([e["qid"] for e in submission])
     gt_qids = set([e["qid"] for e in ground_truth])
     if match_number:
@@ -350,17 +323,6 @@ def eval_submission(submission, ground_truth, verbose=True, match_number=True):
             "MR-full-R1@0.5": moment_ret_scores["full"]["MR-R1"]["0.5"],
             "MR-full-R1@0.7": moment_ret_scores["full"]["MR-R1"]["0.7"]}
         eval_metrics_brief.update(sorted([(k, v) for k, v in moment_ret_scores_brief.items()], key=lambda x: x[0]))
-
-    # 关闭了saliency的评测
-    # if "pred_saliency_scores" in submission[0]:
-    #     highlight_det_scores = eval_highlight(
-    #         submission, ground_truth, verbose=verbose)
-    #     eval_metrics.update(highlight_det_scores)
-    #     highlight_det_scores_brief = dict([
-    #         (f"{k}-{sub_k.split('-')[1]}", v[sub_k])
-    #         for k, v in highlight_det_scores.items() for sub_k in v])
-    #     eval_metrics_brief.update(highlight_det_scores_brief)
-
     # sort by keys
     final_eval_metrics = OrderedDict()
     final_eval_metrics["brief"] = eval_metrics_brief
