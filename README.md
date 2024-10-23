@@ -23,6 +23,8 @@ The full paper can be found at: [https://arxiv.org/abs/2310.17189](https://arxiv
 
 
 ## 🔥 Updates
++ 2024/10/23: Implementation is simplified!
+
 + 2024/03/16: The code associated with this work is fully open-sourced!
 
 + 2024/03/13: This work is accepted by ICME 2024. 
