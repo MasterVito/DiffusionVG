@@ -11,12 +11,12 @@ The full paper can be found at: [https://arxiv.org/abs/2310.17189](https://arxiv
 ![model](images/model.png)
 
 
-### Results on Charades-STA (above) and Activitynet-Captions (below)
+### Results on Charades-STA  
 | Feature | R@1 IoU=0.3 | R@1 IoU=0.5 | R@1 IoU=0.7 |
 |---------|-------------|-------------|-------------|
 | I3D     | 76.53       | 62.30       | 40.05       |
 | VGG     | 70.38       | 57.13       | 35.06       |
-
+### Results on Activitynet-Captions 
 | Feature | R@1 IoU=0.3 | R@1 IoU=0.5 | R@1 IoU=0.7 |
 |---------|-------------|-------------|-------------|
 | C3D     | 65.02       | 47.27       | 27.87       |
