@@ -52,7 +52,7 @@ python demo.py
 ## 🍀 Video Feature Download
 For Charades-STA, we utilize the [I3D features](https://pan.baidu.com/s/1hT0XNtykLSo2C2F2sz9X4g?pwd=5366) from [2D-TAN](https://github.com/microsoft/VideoX/tree/master/2D-TAN).
 
-For Activitynet-Captions, we utilize the [C3D features](yy) from the [official website](http://activity-net.org/challenges/2016/download.html#c3d).
+For Activitynet-Captions, we utilize the C3D features from the [official website](http://activity-net.org/challenges/2016/download.html#c3d).
 
 After downloading the features, the default setting is to unzip them into the "features" folder. You can change the feature path to a custom directory using the "vid_feature_path" parameter.
 
